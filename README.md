@@ -1,16 +1,23 @@
-# tough
+# Tough Fitness App
+This application is build with [Flutter](https://flutter.dev) and [Stacked](http://filledstacks.com) architecture.It makes use of a lot of code generation to reduce boiler plate code. To generate all the necessary code run the following command.
 
-A new Flutter project.
+## Running
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+### Loading packages
+```
+flutter pub get
+```
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Code generation
+```
+flutter pub run build_runner build --delete-conflicting-outputs
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Debugging
+
+### Application
+```
+flutter run -t lib/main_app.dart
+```
